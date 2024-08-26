@@ -1,3 +1,4 @@
+import './login.css'
 import {useState} from 'react'
 import { NavLink, useNavigate } from "react-router-dom";
 import { post } from '../../client-Functions';
@@ -52,12 +53,12 @@ function Login() {
       <div className="login-container">
         <section className="login-form-container">
           <div className="login-header">
-            <h1>BadSpey Volleyball Login</h1>
             <img
               src={VolleyBallImg}
               width="70px"
               alt="Well grounded counselling logo"
             />
+            <h1>BadSpey Volleyball Login</h1>
           </div>
           <form onSubmit={handleLogin}>
             <label htmlFor="email">Email:</label>

@@ -1,4 +1,4 @@
-const serverURL = ""
+const serverURL = "eventual server for volleyball" // Update when server is created. 
 
 async function get(endpoint) {
     const token = localStorage.getItem("token");
