@@ -1,12 +1,15 @@
-import './App.css'
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import Login from "./pages/login/login";
 
 function App() {
-
   return (
     <>
-      <div><p>HELLO WORLD</p></div>
+      <Routes>
+        <Route path="login" element={<Login />} />
+      </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
