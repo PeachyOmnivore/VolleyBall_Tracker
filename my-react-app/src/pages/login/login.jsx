@@ -1,6 +1,7 @@
 import {useState} from 'react'
 import { NavLink, useNavigate } from "react-router-dom";
 import { post } from '../../client-Functions';
+import VolleyBallImg from '../../assets/volleyball.svg'
 
 function Login() {
     const INITIAL_STATE = {
@@ -51,12 +52,12 @@ function Login() {
       <div className="login-container">
         <section className="login-form-container">
           <div className="login-header">
-            <h1>Welcome Back!</h1>
-            {/* <img
-              src={WGClogo}
+            <h1>BadSpey Volleyball Login</h1>
+            <img
+              src={VolleyBallImg}
               width="70px"
               alt="Well grounded counselling logo"
-            /> */}
+            />
           </div>
           <form onSubmit={handleLogin}>
             <label htmlFor="email">Email:</label>
@@ -64,7 +65,7 @@ function Login() {
               type="email"
               name="email"
               required={true}
-              placeholder="Enter your email or username"
+              placeholder="Enter your email"
               value={loginData.email}
               onChange={onInput}
             />
