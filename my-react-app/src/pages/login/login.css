@@ -20,10 +20,10 @@ form {
 }
 
 img {
-    margin-right: 10px;
+   margin-left: 10px;
 }
 
-section {
+section + section {
     margin: 10px 0px 10px 0px;
     text-align: start;
 }
@@ -36,4 +36,23 @@ input {
 
 ::placeholder {
     text-align: center;
+}
+
+.remember {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    place-items: center;
+}
+
+button {
+    width: 100px;
+    border: black 2px solid;
+    border-radius: 25px;
+    background-color: #ffffff;
+    padding: 10px;
+    font-weight: 400;
+}
+
+button:active {
+    background-color: #d0d0d0;
 }

@@ -80,10 +80,12 @@ function Login() {
               onChange={onInput}
             />
           </section>
-          <label>
-            Remeber me?
-            <ToggleSwitch check={loginData.remember} onInput={onInput} />
-          </label>
+          <section className="remember">
+            <p>Remember me?</p>
+            <div>
+              <ToggleSwitch check={loginData.remember} onInput={onInput} />
+            </div>
+          </section>
           <button type="submit">LOGIN</button>
         </form>
         {loginResponse && <p>{loginResponse}</p>}
