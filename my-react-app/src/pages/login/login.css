@@ -22,3 +22,18 @@ form {
 img {
     margin-right: 10px;
 }
+
+section {
+    margin: 10px 0px 10px 0px;
+    text-align: start;
+}
+
+input {
+    border: black solid 2px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+::placeholder {
+    text-align: center;
+}
