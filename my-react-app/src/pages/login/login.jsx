@@ -55,7 +55,6 @@ function Login() {
           <img
             src={VolleyBallImg}
             width="70px"
-            alt="Well grounded counselling logo"
           />
           <h1>BadSpey Volleyball Login</h1>
         </div>
@@ -89,7 +88,7 @@ function Login() {
           <button type="submit">LOGIN</button>
         </form>
         {loginResponse && <p>{loginResponse}</p>}
-        <NavLink to="/register">Create a new account</NavLink>
+        <NavLink to="/registration">Create a new account</NavLink>
       </section>
     </div>
   );
