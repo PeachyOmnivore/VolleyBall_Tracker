@@ -43,7 +43,7 @@ function Registration() {
     }
 
     try {
-      const data = await post(registerData, "register");
+      const data = await post(registerData, "registration");
 
       if (!data.user) {
         setRegisterResponse(data.message);

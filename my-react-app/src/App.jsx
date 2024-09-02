@@ -22,7 +22,7 @@ function App() {
         setCurrentUser(foundUser);
 
         if (!foundUser) {
-          navigate('/')
+          navigate('/login')
         }
 
       } catch (err) {
